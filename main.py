@@ -1,11 +1,14 @@
 def main():
     number = int(input('Enter your input: '))
     result = []
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    while True:
+        x = number // 2
+        rem = number % 2
+        result.append(rem)
+        if x > 0:
+            number = x
+        else:
+            break
 
     print(*result)
     ########################################
